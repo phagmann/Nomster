@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
 
   def index
     @places = Place.all
-    @places = Place.paginate(:page => params[:page], :per_page => 1)
+    @places = Place.paginate(:page => params[:page], :per_page => 2)
   end
 
   def new
@@ -56,6 +56,6 @@ class PlacesController < ApplicationController
   private
 
   def place_params
-    params.require(:place).permit(:name, :description, :address)
+    params.require(:place).permit(:name, :address, :description )
   end
 end
