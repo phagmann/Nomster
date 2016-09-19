@@ -7,8 +7,5 @@ class NotificationMailer < ActionMailer::Base
     mail(to: @place_owner.email,
           subject: "A comment has been added to #{@place.name}")
   end
-  
-  def send_comment_email
-      NotificationMailer.comment_added(self).deliver
-  end
+
 end
