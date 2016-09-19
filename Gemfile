@@ -39,6 +39,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
 gem 'carrierwave', '0.10.0'
+gem "fog"
 # Use unicorn as the app server
 # gem 'unicorn'
 
